@@ -93,8 +93,9 @@ negative because it is a cost. Rewards come from `python -m sim.runner` at commi
 ## How to run
 
 The tests pass on Python 3.11, 3.12 and 3.13. The 3.13 environment used NumPy 2.5.5,
-Gymnasium 1.4.0 and pytest 9.2.0. Create the environment **outside** the repository:
-untracked files make the runner record the working tree as `dirty`.
+Gymnasium 1.4.0 and pytest 9.2.0. Create the environment outside the repository or in
+`.venv/`, which `.gitignore` excludes. Any other untracked file makes the runner record
+the working tree as `dirty`.
 
 ```bash
 python3 -m venv ~/.venvs/autoscaler
@@ -191,10 +192,14 @@ training. The campaign is labelled exploratory, because no power calculation exi
   modeled proxies.
 - **Default config:** results and the Stage 2 analysis assume the default configuration.
 - **Untested platforms:** only macOS was tested. Python 3.10 was not tested.
-- **Missing files:** there is no pinned dependency file, `.gitignore` or licence yet.
+- **No pinned dependencies:** there is no `requirements.txt` yet.
 - **Stale `CLAUDE.md`:** it still says the current stage is 1A, but it is a frozen file.
 - **Diagnostics script:** the phase analysis behind the quota timing in Results came from
   a script that is not in the repository.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
 
 ## Credits
 

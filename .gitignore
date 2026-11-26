@@ -1,0 +1,32 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Virtual environments (repository root only)
+/.venv/
+/venv/
+/env/
+
+# Packaging output (repository root only)
+/build/
+/dist/
+*.egg-info/
+
+# Secrets and local settings
+.env
+.env.*
+.claude/settings.local.json
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+
+# Run outputs. Write manifests and checkpoints outside the repository,
+# but never commit them if they land at the root by mistake.
+/manifests/
+/checkpoints/
+/runs/
+*.pt
+*.pth
