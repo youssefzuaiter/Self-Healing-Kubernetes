@@ -83,6 +83,9 @@ python -B -m pytest -v -p no:cacheprovider -o python_files='check_*.py' rl/tests
 
 ## What to include in a pull request
 
+The [pull request template](.github/pull_request_template.md) fills in these sections
+for you.
+
 - The exact commands you ran, with exit codes and test counts
 - Which files changed, and confirmation that the frozen-file check passed
 - Every decision the specs left open, recorded where the table above says
