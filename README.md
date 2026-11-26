@@ -92,15 +92,16 @@ negative because it is a cost. Rewards come from `python -m sim.runner` at commi
 
 ## How to run
 
-The tests pass on Python 3.11, 3.12 and 3.13. The 3.13 environment used NumPy 2.5.5,
-Gymnasium 1.4.0 and pytest 9.2.0. Create the environment outside the repository or in
-`.venv/`, which `.gitignore` excludes. Any other untracked file makes the runner record
-the working tree as `dirty`.
+The tests pass on Python 3.11, 3.12 and 3.13. `requirements.txt` pins NumPy 2.5.5,
+Gymnasium 1.4.0 and pytest 9.2.0, the versions used on Python 3.13. NumPy 2.5.5 needs
+Python 3.12 or later, so on Python 3.11 run `pip install numpy gymnasium pytest` instead.
+Create the environment outside the repository or in `.venv/`, which `.gitignore`
+excludes. Any other untracked file makes the runner record the working tree as `dirty`.
 
 ```bash
 python3 -m venv ~/.venvs/autoscaler
 source ~/.venvs/autoscaler/bin/activate
-pip install numpy gymnasium pytest
+pip install -r requirements.txt
 ```
 
 Run the test suite. Expected: `1070 passed`.
@@ -147,6 +148,8 @@ sim/runner.py                     benchmark runner and JSON manifests
 tests/test_stage1a_physics.py     Stage 1A tests
 tests/test_stage1b_baselines.py   Stage 1B tests
 tools/mutation_check.py           reproducible mutation check
+requirements.txt                  pinned direct dependencies
+LICENSE                           MIT licence
 ```
 
 ## How the work was done
@@ -192,7 +195,8 @@ training. The campaign is labelled exploratory, because no power calculation exi
   modeled proxies.
 - **Default config:** results and the Stage 2 analysis assume the default configuration.
 - **Untested platforms:** only macOS was tested. Python 3.10 was not tested.
-- **No pinned dependencies:** there is no `requirements.txt` yet.
+- **Partial pinning:** `requirements.txt` pins only the three direct dependencies, not
+  the packages they pull in.
 - **Stale `CLAUDE.md`:** it still says the current stage is 1A, but it is a frozen file.
 - **Diagnostics script:** the phase analysis behind the quota timing in Results came from
   a script that is not in the repository.
