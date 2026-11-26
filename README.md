@@ -94,10 +94,9 @@ negative because it is a cost. Rewards come from `python -m sim.runner` at commi
 
 ## How to run
 
-The tests pass on Python 3.11, 3.12 and 3.13. `requirements.txt` pins NumPy 2.5.5,
-Gymnasium 1.4.0 and pytest 9.2.0, the versions used on Python 3.13. NumPy 2.5.5 needs
-Python 3.12 or later, so on Python 3.11 run `pip install numpy gymnasium pytest` instead.
-Create the environment outside the repository or in `.venv/`, which `.gitignore`
+The tests pass on Python 3.11, 3.12 and 3.13. `requirements.txt` pins Gymnasium 1.4.0,
+pytest 9.2.0 and NumPy 2.5.5, or NumPy 2.4.6 on Python 3.11, because 2.5.5 needs 3.12 or
+later. Create the environment outside the repository or in `.venv/`, which `.gitignore`
 excludes. Any other untracked file makes the runner record the working tree as `dirty`.
 
 ```bash

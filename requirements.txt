@@ -1,8 +1,8 @@
-# Stage 1A/1B dependencies, pinned to the versions the 1,070-test suite passed with
-# on Python 3.13. NumPy 2.5.5 requires Python 3.12 or later. On Python 3.11, install
-# numpy, gymnasium and pytest without pins instead (the suite also passed there).
-# Only these direct dependencies are pinned, not the packages they pull in.
-# Stage 2 will add its own requirements-rl.txt.
-numpy==2.5.5
+# Stage 1A/1B dependencies, pinned to versions the 1,070-test suite passed with.
+# NumPy 2.5.5 requires Python 3.12 or later, so Python 3.11 uses NumPy 2.4.6, which
+# passed the suite in CI. Only these direct dependencies are pinned, not the packages
+# they pull in. Stage 2 will add its own requirements-rl.txt.
+numpy==2.5.5; python_version >= "3.12"
+numpy==2.4.6; python_version < "3.12"
 gymnasium==1.4.0
 pytest==9.2.0
