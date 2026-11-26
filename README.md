@@ -1,5 +1,7 @@
 # Topology-Aware Spatio-Temporal Graph RL Autoscaler for Kubernetes Microservices
 
+[![Tests](https://github.com/youssefzuaiter/Self-Healing-Kubernetes/actions/workflows/tests.yml/badge.svg)](https://github.com/youssefzuaiter/Self-Healing-Kubernetes/actions/workflows/tests.yml)
+
 A deterministic simulator of a five-service microservice application, a safety shield,
 and three non-RL autoscaling baselines. It is the test bed for a planned graph-based
 reinforcement learning autoscaler. **No RL code exists yet, and nothing here runs on a
@@ -110,6 +112,10 @@ Run the test suite. Expected: `1070 passed`.
 python -B -m pytest -p no:cacheprovider
 ```
 
+GitHub Actions runs the same command on Ubuntu with Python 3.11, 3.12 and 3.13 for every
+push to `main` or `stage-2-rl` and for every pull request
+([`.github/workflows/tests.yml`](.github/workflows/tests.yml)).
+
 Print the benchmark table above:
 
 ```bash
@@ -149,6 +155,7 @@ tests/test_stage1a_physics.py     Stage 1A tests
 tests/test_stage1b_baselines.py   Stage 1B tests
 tools/mutation_check.py           reproducible mutation check
 requirements.txt                  pinned direct dependencies
+.github/workflows/tests.yml       CI: the test suite on Python 3.11 to 3.13
 LICENSE                           MIT licence
 ```
 
