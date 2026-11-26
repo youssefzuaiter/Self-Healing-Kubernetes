@@ -156,6 +156,7 @@ tools/mutation_check.py           reproducible mutation check
 requirements.txt                  pinned direct dependencies
 .github/workflows/tests.yml       CI: the test suite on Python 3.11 to 3.13
 LICENSE                           MIT licence
+CONTRIBUTING.md                   rules and checks for contributors
 ```
 
 ## How the work was done
