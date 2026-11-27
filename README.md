@@ -161,6 +161,7 @@ LICENSE                           MIT licence
 CONTRIBUTING.md                   rules and checks for contributors
 CODE_OF_CONDUCT.md                Contributor Covenant 2.0
 SECURITY.md                       how to report a vulnerability privately
+CHANGELOG.md                      notable changes, by milestone
 ```
 
 ## How the work was done

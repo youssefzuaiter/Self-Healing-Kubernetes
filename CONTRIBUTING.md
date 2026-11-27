@@ -85,9 +85,10 @@ any code that depends on it. Report security problems privately, as described in
 
 1. Branch from `main`. Stage 2 work happens on `stage-2-rl`.
 2. Make small commits. The subject line says what changed, in the imperative mood.
-3. Open a pull request into `main`. The [Tests workflow](.github/workflows/tests.yml) must
+3. Add a line for each notable change under `Unreleased` in [CHANGELOG.md](CHANGELOG.md).
+4. Open a pull request into `main`. The [Tests workflow](.github/workflows/tests.yml) must
    pass on Python 3.11, 3.12 and 3.13.
-4. Never force-push `main` or `stage-2-rl`.
+5. Never force-push `main` or `stage-2-rl`.
 
 ## What to include in a pull request
 
