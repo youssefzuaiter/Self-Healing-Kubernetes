@@ -74,6 +74,14 @@ python -B -m pytest -v -p no:cacheprovider -o python_files='check_*.py' rl/tests
 
 `sim/` must never import `rl/` or `torch`, and `rl/` uses only the public frozen API.
 
+## Dependency updates
+
+Dependabot opens weekly pull requests for `requirements.txt` and the GitHub Actions used in
+CI ([.github/dependabot.yml](.github/dependabot.yml)). Treat each one like any other change:
+the Tests workflow must pass on Python 3.11, 3.12 and 3.13, and run the mutation check
+before merging, because a new dependency version can change the simulator's numerics. Don't
+merge an update that drops Python 3.11 support for NumPy.
+
 ## Reporting problems
 
 Open an issue with one of the [issue forms](.github/ISSUE_TEMPLATE): a bug report, a spec

@@ -22,6 +22,7 @@ releases; milestones are git tags.
 - `SECURITY.md` for private vulnerability reports (`696392c`).
 - This changelog, and a step in `CONTRIBUTING.md` to keep it updated.
 - `CITATION.cff` with citation metadata.
+- Dependabot configuration for weekly updates of `requirements.txt` and GitHub Actions.
 
 ### Changed
 

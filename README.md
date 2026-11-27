@@ -158,6 +158,7 @@ requirements.txt                  pinned direct dependencies
 .github/workflows/tests.yml       CI: the test suite on Python 3.11 to 3.13
 .github/pull_request_template.md  checklist pre-filled into new pull requests
 .github/ISSUE_TEMPLATE/           forms for bugs, spec problems and Stage 2 tasks
+.github/dependabot.yml            weekly dependency update pull requests
 LICENSE                           MIT licence
 CONTRIBUTING.md                   rules and checks for contributors
 CODE_OF_CONDUCT.md                Contributor Covenant 2.0
