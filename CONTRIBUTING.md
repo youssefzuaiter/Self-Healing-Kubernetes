@@ -73,6 +73,12 @@ python -B -m pytest -v -p no:cacheprovider -o python_files='check_*.py' rl/tests
 
 `sim/` must never import `rl/` or `torch`, and `rl/` uses only the public frozen API.
 
+## Reporting problems
+
+Open an issue with one of the [issue forms](.github/ISSUE_TEMPLATE): a bug report, a spec
+problem, or a Stage 2 task. Report a spec contradiction or missing decision before writing
+any code that depends on it.
+
 ## Workflow
 
 1. Branch from `main`. Stage 2 work happens on `stage-2-rl`.

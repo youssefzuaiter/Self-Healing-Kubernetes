@@ -1,0 +1,50 @@
+name: Stage 2 task
+description: A piece of Stage 2 RL work, tied to a gate and to acceptance tests.
+title: "[Stage 2]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Stage 2 follows docs/SPEC_03_RL_TRAINING.md. Each gate needs explicit approval
+        (SPEC_03 Section 6.5), and passing tests does not authorize the next gate.
+  - type: dropdown
+    id: gate
+    attributes:
+      label: Gate
+      options:
+        - "2A: rl/ modules, tests, smoke training, throughput report"
+        - "2B: tuning on training and validation traces"
+        - "2C: final runs, test-open commit, held-out evaluation"
+    validations:
+      required: true
+  - type: input
+    id: spec-sections
+    attributes:
+      label: SPEC_03 sections
+      description: The sections this task implements.
+      placeholder: "3.4, 6.6"
+    validations:
+      required: true
+  - type: textarea
+    id: task
+    attributes:
+      label: Task
+      description: What will be built or run, and in which files.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance tests
+      description: The test IDs from SPEC_03 Section 6.6 that show this is done.
+      placeholder: "AT-REC-3, AT-REC-4"
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: This gate has been authorized.
+        - label: The work stays in rl/ and requirements-rl.txt and changes no frozen file.

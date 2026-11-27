@@ -1,0 +1,68 @@
+name: Bug report
+description: Something in the simulator, baselines, runner, tests or CI behaves wrongly.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please reproduce the problem on a clean checkout of `main` first.
+        The 14 files tagged `stage-1b-frozen` never change, so a bug in them is fixed
+        in a later stage rather than by editing them. See CONTRIBUTING.md.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What you saw, and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: How to reproduce
+      description: The exact commands you ran, in order.
+      render: bash
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Output
+      description: Full error messages or test output.
+      render: text
+  - type: input
+    id: commit
+    attributes:
+      label: Commit
+      description: "The output of `git rev-parse --short HEAD`."
+      placeholder: 6507ed1
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: "Operating system, Python version, and the output of `python -m pip list --format=freeze | grep -iE '^(numpy|gymnasium|pytest)=='`."
+      render: text
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - "Simulator or shield (sim/env.py, sim/shield.py, sim/config.py)"
+        - "Workloads, baselines or runner (sim/workloads.py, sim/baselines.py, sim/runner.py)"
+        - "Tests or mutation check"
+        - "Stage 2 code (rl/)"
+        - "CI or dependencies"
+        - "Documentation"
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I reproduced this on a clean checkout of the commit above.
+        - label: The frozen-file check in CONTRIBUTING.md exits 0 on my checkout.

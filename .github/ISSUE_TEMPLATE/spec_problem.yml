@@ -1,0 +1,60 @@
+name: Spec problem
+description: A contradiction, missing decision or error in a specification.
+title: "[Spec]: "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The project rule is to stop and report before writing code when requirements
+        contradict each other or a necessary decision is missing. Use this form for that.
+  - type: dropdown
+    id: document
+    attributes:
+      label: Document
+      options:
+        - "docs/SPEC_01_SIMULATOR.md (Stage 1A)"
+        - "docs/SPEC_02_BASELINES.md (Stage 1B)"
+        - "docs/SPEC_03_RL_TRAINING.md (Stage 2)"
+        - "docs/DECISIONS.md"
+        - "CLAUDE.md"
+    validations:
+      required: true
+  - type: input
+    id: section
+    attributes:
+      label: Section
+      description: The section number or heading.
+      placeholder: "Section 3.3"
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind of problem
+      options:
+        - "Two requirements contradict each other"
+        - "A necessary decision is missing"
+        - "The wording is ambiguous"
+        - "The spec and the code disagree"
+        - "A formula or number is wrong"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: Quote the exact text involved and explain the conflict or gap.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed resolution
+      description: Optional. Note that the four Stage 1A/1B documents and CLAUDE.md are frozen.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I have not written code that depends on how this is resolved.
