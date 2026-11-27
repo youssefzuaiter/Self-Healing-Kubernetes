@@ -162,6 +162,7 @@ CONTRIBUTING.md                   rules and checks for contributors
 CODE_OF_CONDUCT.md                Contributor Covenant 2.0
 SECURITY.md                       how to report a vulnerability privately
 CHANGELOG.md                      notable changes, by milestone
+CITATION.cff                      how to cite this repository
 ```
 
 ## How the work was done

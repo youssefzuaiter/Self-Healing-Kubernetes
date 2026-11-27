@@ -21,6 +21,7 @@ releases; milestones are git tags.
 - `CODE_OF_CONDUCT.md`, Contributor Covenant 2.0 (`a4cf19e`).
 - `SECURITY.md` for private vulnerability reports (`696392c`).
 - This changelog, and a step in `CONTRIBUTING.md` to keep it updated.
+- `CITATION.cff` with citation metadata.
 
 ### Changed
 

@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using these metadata."
+type: software
+title: "Topology-Aware Spatio-Temporal Graph RL Autoscaler for Kubernetes Microservices"
+abstract: >-
+  A deterministic five-service microservice simulator with a safety shield and
+  non-RL autoscaling baselines, built as the test bed for a graph-based RL
+  autoscaler. No RL code or real Kubernetes yet.
+authors:
+  - given-names: Youssef
+    family-names: Zuaiter
+    alias: youssefzuaiter
+repository-code: "https://github.com/youssefzuaiter/Self-Healing-Kubernetes"
+license: MIT
+keywords:
+  - autoscaling
+  - microservices
+  - kubernetes
+  - simulation
+  - queueing theory
+  - reinforcement learning
+  - graph neural networks
