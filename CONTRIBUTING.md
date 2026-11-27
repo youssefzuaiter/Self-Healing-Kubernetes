@@ -78,7 +78,8 @@ python -B -m pytest -v -p no:cacheprovider -o python_files='check_*.py' rl/tests
 
 Open an issue with one of the [issue forms](.github/ISSUE_TEMPLATE): a bug report, a spec
 problem, or a Stage 2 task. Report a spec contradiction or missing decision before writing
-any code that depends on it.
+any code that depends on it. Report security problems privately, as described in
+[SECURITY.md](SECURITY.md), never in a public issue.
 
 ## Workflow
 
