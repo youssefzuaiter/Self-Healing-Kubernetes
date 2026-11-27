@@ -159,6 +159,7 @@ requirements.txt                  pinned direct dependencies
 .github/ISSUE_TEMPLATE/           forms for bugs, spec problems and Stage 2 tasks
 LICENSE                           MIT licence
 CONTRIBUTING.md                   rules and checks for contributors
+CODE_OF_CONDUCT.md                Contributor Covenant 2.0
 ```
 
 ## How the work was done

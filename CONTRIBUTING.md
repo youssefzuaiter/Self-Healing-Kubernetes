@@ -2,6 +2,7 @@
 
 This project is built in audited stages. A change is welcome when it keeps the frozen
 baseline intact, follows the specifications, and comes with honest evidence that it works.
+Everyone taking part is expected to follow the [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ## Ground rules
 
