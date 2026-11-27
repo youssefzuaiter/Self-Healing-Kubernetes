@@ -95,7 +95,9 @@ any code that depends on it. Report security problems privately, as described in
 2. Make small commits. The subject line says what changed, in the imperative mood.
 3. Add a line for each notable change under `Unreleased` in [CHANGELOG.md](CHANGELOG.md).
 4. Open a pull request into `main`. The [Tests workflow](.github/workflows/tests.yml) must
-   pass on Python 3.11, 3.12 and 3.13.
+   pass on Python 3.11, 3.12 and 3.13. `main` is protected: it accepts changes only through
+   pull requests whose three test jobs pass on a branch that is up to date with `main`, and
+   the rules apply to admins too.
 5. Never force-push `main` or `stage-2-rl`.
 
 ## What to include in a pull request
