@@ -8,9 +8,8 @@ releases; milestones are git tags.
 
 ### Added
 
-- Stage 2 specification `docs/SPEC_03_RL_TRAINING.md`, version `1.0.0-rc4`, awaiting audit
-  sign-off. It defines the RL ablation ladder; no Stage 2 code exists yet (`2b1b937`,
-  pull request #1).
+- Stage 2 specification `docs/SPEC_03_RL_TRAINING.md`, added as version `1.0.0-rc4`. It
+  defines the RL ablation ladder; no Stage 2 code exists yet (`2b1b937`, pull request #1).
 - `README.md` explaining the project, results and how to run it (`d9bbec0`).
 - MIT `LICENSE` and `.gitignore` (`e8555c0`).
 - `requirements.txt` pinning NumPy, Gymnasium and pytest (`33a4afc`).
@@ -28,6 +27,9 @@ releases; milestones are git tags.
 
 - `requirements.txt` pins NumPy 2.4.6 on Python 3.11, because NumPy 2.5.5 needs Python
   3.12 or later. CI now installs from it on every Python version (`50b4153`).
+- `docs/SPEC_03_RL_TRAINING.md` is signed off by both audits and bumped from `1.0.0-rc4`
+  to `1.0.0`. Only the version line changes.
+- `CONTRIBUTING.md` notes that `main` is protected (pull request #2).
 
 ## [stage-1b-frozen] - 2026-11-25
 

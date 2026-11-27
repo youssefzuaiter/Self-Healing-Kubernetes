@@ -14,7 +14,7 @@ real Kubernetes cluster.**
 |---|---|---|
 | 1A | Simulator physics, safety shield, 500 tests | Done, audited, frozen |
 | 1B | Workloads, baselines, reproducible runner, 570 tests | Done, audited, frozen |
-| 2 | RL ablation ladder: [specification](docs/SPEC_03_RL_TRAINING.md) | Spec `1.0.0-rc4`, awaiting audit sign-off. No code |
+| 2 | RL ablation ladder: [specification](docs/SPEC_03_RL_TRAINING.md) | Spec `1.0.0`, signed off. No code yet |
 
 The frozen Stage 1A/1B code is tagged `stage-1b-frozen`. Stage 2 work happens on the
 `stage-2-rl` branch.
@@ -185,7 +185,8 @@ specifications left open is recorded in [docs/DECISIONS.md](docs/DECISIONS.md).
 5. **Freeze:** committed the 14 audited files and tagged them `stage-1b-frozen`.
 6. **Stage 2 specification:** drafted
    [SPEC_03](docs/SPEC_03_RL_TRAINING.md)
-   and revised it through four release candidates after a dual audit.
+   and revised it through four release candidates after a dual audit, then signed it off
+   as version 1.0.0.
 
 ## Stage 2 plan
 
