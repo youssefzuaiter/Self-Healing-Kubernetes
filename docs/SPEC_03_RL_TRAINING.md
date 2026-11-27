@@ -2,7 +2,7 @@
 
 Topology-Aware Spatio-Temporal Graph RL Autoscaler for Kubernetes Microservices.
 
-Version 1.0.0-rc4. **Specification only: no Stage 2 code exists and none is
+Version 1.0.0. **Specification only: no Stage 2 code exists and none is
 authorized.** Stage 2 builds on Git tag `stage-1b-frozen`, commit
 `be743262fe2d4372ee3abcef5f95512ca998d200`, and modifies none of its 14 files.
 Section 7 is this document's decision register, because `docs/DECISIONS.md` is frozen.
