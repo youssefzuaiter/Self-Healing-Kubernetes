@@ -1,6 +1,7 @@
 # Topology-Aware Spatio-Temporal Graph RL Autoscaler for Kubernetes Microservices
 
 [![Tests](https://github.com/youssefzuaiter/Self-Healing-Kubernetes/actions/workflows/tests.yml/badge.svg)](https://github.com/youssefzuaiter/Self-Healing-Kubernetes/actions/workflows/tests.yml)
+[![Release](https://img.shields.io/github/v/release/youssefzuaiter/Self-Healing-Kubernetes?display_name=tag&sort=date)](https://github.com/youssefzuaiter/Self-Healing-Kubernetes/releases/latest)
 
 A deterministic simulator of a five-service microservice application, a safety shield,
 and three non-RL autoscaling baselines. It is the test bed for a planned graph-based
